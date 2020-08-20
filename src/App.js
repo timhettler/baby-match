@@ -1,5 +1,5 @@
-import React from "react";
-import "./App.css";
+import React, { useState, useRef, useEffect } from "react";
+import "./App.scss";
 
 const BABIES = [
   {
@@ -21,6 +21,10 @@ const BABIES = [
   {
     name: "Dan",
     src: require("./assets/dan.jpg"),
+  },
+  {
+    name: "Dave",
+    src: require("./assets/dave.jpeg"),
   },
   {
     name: "Elizabeth",
@@ -47,11 +51,11 @@ const BABIES = [
     src: require("./assets/lynnie.jpg"),
   },
   {
-    name: "Mary Hettler",
+    name: "Mary B",
     src: require("./assets/maryb.jpg"),
   },
   {
-    name: "Mary Young",
+    name: "Mary H",
     src: require("./assets/maryh.jpeg"),
   },
   {
@@ -73,16 +77,54 @@ const BABIES = [
 ];
 
 function App() {
+  const formEl = useRef(null);
+  const [allNames] = useState(BABIES.map(({ name }) => name));
+  // const [availableNames, setAvailableNames] = useState(allNames);
+  const [selectedNames, setSetSelectedNames] = useState([]);
+
+  const onChange = (e) => {
+    setSetSelectedNames(
+      Array.prototype.map.call(formEl.current.foo, (select) => select.value)
+    );
+  };
+
+  // useEffect(() => {
+  //   setAvailableNames(allNames.filter((name) => !selectedNames.includes(name)));
+  // }, [allNames, selectedNames]);
+
   return (
-    <div className="App">
+    <form ref={formEl} className="App" onChange={onChange}>
       <div className="grid">
-        {BABIES.map(({ name, src }) => (
-          <figure>
+        {BABIES.map(({ name, src }, index) => (
+          <figure key={name}>
             <img src={src} alt="" />
+            <figcaption>
+              <div className="count">{index + 1}</div>
+              <select name="foo" value={selectedNames[index]}>
+                <option value={""}>---</option>
+                {allNames.map((name) => (
+                  <option
+                    key={name}
+                    value={name}
+                    disabled={selectedNames.includes(name)}
+                  >
+                    {name}
+                  </option>
+                ))}
+              </select>
+            </figcaption>
           </figure>
         ))}
       </div>
-    </div>
+      <div className="guesses">
+        <h3>Your Guesses:</h3>
+        <ol>
+          {selectedNames.map((name, index) => (
+            <li key={index}>{name}</li>
+          ))}
+        </ol>
+      </div>
+    </form>
   );
 }
 

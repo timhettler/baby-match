@@ -1,0 +1,113 @@
+$size--medium-viewport-start: 768px;
+$size--large-viewport-start: 1100px;
+
+@mixin _breakpoint($media-queries) {
+  $query-list: ();
+  $keys: map-keys($media-queries);
+  $values: map-values($media-queries);
+  @for $i from 1 through length($keys) {
+    $string: "(" + nth($keys, $i) + ":" + nth($values, $i) + ")";
+    @if (length($query-list) != 0) {
+      $string: "and " + $string;
+    }
+    $query-list: append($query-list, unquote($string));
+  }
+
+  @media #{$query-list} {
+    @content;
+  }
+}
+
+@mixin small() {
+  @include _breakpoint(
+    (
+      max-width: (
+        $size--medium-viewport-start - 1px,
+      ),
+    )
+  ) {
+    @content;
+  }
+}
+
+@mixin smallAndMedium() {
+  @include _breakpoint(
+    (
+      max-width: (
+        $size--large-viewport-start - 1px,
+      ),
+    )
+  ) {
+    @content;
+  }
+}
+
+@mixin medium() {
+  @include _breakpoint(
+    (
+      min-width: $size--medium-viewport-start,
+      max-width: (
+        $size--large-viewport-start - 1px,
+      ),
+    )
+  ) {
+    @content;
+  }
+}
+
+@mixin mediumAndLarge() {
+  @include _breakpoint(
+    (
+      min-width: $size--medium-viewport-start,
+    )
+  ) {
+    @content;
+  }
+}
+
+@mixin large() {
+  @include _breakpoint(
+    (
+      min-width: $size--large-viewport-start,
+    )
+  ) {
+    @content;
+  }
+}
+
+.grid {
+  @include mediumAndLarge {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.count {
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+  align-items: flex-start;
+  display: flex;
+
+  > img {
+    display: block;
+    width: 100%;
+  }
+
+  > figcaption {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+  }
+}
+
+.guesses {
+  padding: 20px;
+}
