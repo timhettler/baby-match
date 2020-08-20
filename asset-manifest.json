@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/baby-match/static/css/main.6c247726.chunk.css",
-    "main.js": "/baby-match/static/js/main.05f3182c.chunk.js",
-    "main.js.map": "/baby-match/static/js/main.05f3182c.chunk.js.map",
+    "main.js": "/baby-match/static/js/main.fa13ba2c.chunk.js",
+    "main.js.map": "/baby-match/static/js/main.fa13ba2c.chunk.js.map",
     "runtime-main.js": "/baby-match/static/js/runtime-main.d0a348bf.js",
     "runtime-main.js.map": "/baby-match/static/js/runtime-main.d0a348bf.js.map",
     "static/js/2.e24c810f.chunk.js": "/baby-match/static/js/2.e24c810f.chunk.js",
     "static/js/2.e24c810f.chunk.js.map": "/baby-match/static/js/2.e24c810f.chunk.js.map",
     "index.html": "/baby-match/index.html",
-    "precache-manifest.0e079c8221ffa943c7c7b33a95cf2881.js": "/baby-match/precache-manifest.0e079c8221ffa943c7c7b33a95cf2881.js",
+    "precache-manifest.cbb937ad729db4f367b3c29dd022dbac.js": "/baby-match/precache-manifest.cbb937ad729db4f367b3c29dd022dbac.js",
     "service-worker.js": "/baby-match/service-worker.js",
     "static/css/main.6c247726.chunk.css.map": "/baby-match/static/css/main.6c247726.chunk.css.map",
     "static/js/2.e24c810f.chunk.js.LICENSE.txt": "/baby-match/static/js/2.e24c810f.chunk.js.LICENSE.txt",
-    "static/media/allie.jpeg": "/baby-match/static/media/allie.29fe5956.jpeg",
+    "static/media/allie.jpeg": "/baby-match/static/media/allie.2d822da9.jpeg",
     "static/media/chris.jpg": "/baby-match/static/media/chris.4efcb5fe.jpg",
     "static/media/dan.jpg": "/baby-match/static/media/dan.7828d5b8.jpg",
-    "static/media/dave.jpeg": "/baby-match/static/media/dave.ad52e2fa.jpeg",
-    "static/media/elizabeth.jpeg": "/baby-match/static/media/elizabeth.8a984fe9.jpeg",
+    "static/media/dave.jpeg": "/baby-match/static/media/dave.33c90bf7.jpeg",
+    "static/media/elizabeth.jpeg": "/baby-match/static/media/elizabeth.1d44741f.jpeg",
     "static/media/gessie.jpg": "/baby-match/static/media/gessie.98c8b1de.jpg",
     "static/media/isaiah.jpg": "/baby-match/static/media/isaiah.cb66f3af.jpg",
     "static/media/ivy.jpg": "/baby-match/static/media/ivy.6ed3f68d.jpg",
@@ -33,6 +33,6 @@
     "static/js/runtime-main.d0a348bf.js",
     "static/js/2.e24c810f.chunk.js",
     "static/css/main.6c247726.chunk.css",
-    "static/js/main.05f3182c.chunk.js"
+    "static/js/main.fa13ba2c.chunk.js"
   ]
 }
