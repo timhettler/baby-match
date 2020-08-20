@@ -75,6 +75,18 @@ $size--large-viewport-start: 1100px;
   }
 }
 
+header {
+  padding: 20px;
+
+  .available-name {
+    &:not(:last-child) {
+      &::after {
+        content: ", ";
+      }
+    }
+  }
+}
+
 .grid {
   @include mediumAndLarge {
     display: grid;

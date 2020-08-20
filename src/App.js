@@ -3,12 +3,12 @@ import "./App.scss";
 
 const BABIES = [
   {
-    name: "Allie",
-    src: require("./assets/allie.jpeg"),
-  },
-  {
     name: "Cherrie",
     src: require("./assets/cherrie.jpg"),
+  },
+  {
+    name: "Allie",
+    src: require("./assets/allie.jpeg"),
   },
   {
     name: "Cheryl",
@@ -78,8 +78,8 @@ const BABIES = [
 
 function App() {
   const formEl = useRef(null);
-  const [allNames] = useState(BABIES.map(({ name }) => name));
-  // const [availableNames, setAvailableNames] = useState(allNames);
+  const [allNames] = useState(BABIES.map(({ name }) => name).sort());
+  const [availableNames, setAvailableNames] = useState(allNames);
   const [selectedNames, setSetSelectedNames] = useState([]);
 
   const onChange = (e) => {
@@ -88,12 +88,29 @@ function App() {
     );
   };
 
-  // useEffect(() => {
-  //   setAvailableNames(allNames.filter((name) => !selectedNames.includes(name)));
-  // }, [allNames, selectedNames]);
+  useEffect(() => {
+    setAvailableNames(allNames.filter((name) => !selectedNames.includes(name)));
+  }, [allNames, selectedNames]);
 
   return (
     <form ref={formEl} className="App" onChange={onChange}>
+      <header>
+        <h1>
+          <span role="img" aria-label="">
+            👶❓
+          </span>
+          Guess That Baby
+          <span role="img" aria-label="">
+            👶❓
+          </span>
+        </h1>
+        <div>
+          Available babies:{" "}
+          {availableNames.map((name) => (
+            <span className="available-name">{name}</span>
+          ))}
+        </div>
+      </header>
       <div className="grid">
         {BABIES.map(({ name, src }, index) => (
           <figure key={name}>
