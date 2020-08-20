@@ -1,5 +1,6 @@
 {
   "name": "baby-challenge",
+  "homepage": "https://timhettler.github.io/baby-match/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
