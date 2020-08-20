@@ -23,6 +23,10 @@ const BABIES = [
     src: require("./assets/maryh.jpeg"),
   },
   {
+    name: "Raeah",
+    src: require("./assets/raeah.jpg"),
+  },
+  {
     name: "Cherrie",
     src: require("./assets/cherrie.jpg"),
   },
