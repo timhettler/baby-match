@@ -3,40 +3,36 @@ import "./App.scss";
 
 const BABIES = [
   {
-    name: "Cherrie",
-    src: require("./assets/cherrie.jpg"),
-  },
-  {
-    name: "Allie",
-    src: require("./assets/allie.jpeg"),
-  },
-  {
     name: "Cheryl",
     src: require("./assets/cheryl.jpg"),
-  },
-  {
-    name: "Chris",
-    src: require("./assets/chris.jpg"),
-  },
-  {
-    name: "Dan",
-    src: require("./assets/dan.jpg"),
   },
   {
     name: "Dave",
     src: require("./assets/dave.jpeg"),
   },
   {
-    name: "Elizabeth",
-    src: require("./assets/elizabeth.jpeg"),
+    name: "Paul",
+    src: require("./assets/paul.jpg"),
   },
   {
     name: "Ivy",
     src: require("./assets/ivy.jpg"),
   },
   {
-    name: "Jim",
-    src: require("./assets/jim.jpg"),
+    name: "Mary H",
+    src: require("./assets/maryh.jpeg"),
+  },
+  {
+    name: "Cherrie",
+    src: require("./assets/cherrie.jpg"),
+  },
+  {
+    name: "Dan",
+    src: require("./assets/dan.jpg"),
+  },
+  {
+    name: "Rebecca",
+    src: require("./assets/rebecca.jpg"),
   },
   {
     name: "Lauren",
@@ -47,32 +43,40 @@ const BABIES = [
     src: require("./assets/leon.jpeg"),
   },
   {
+    name: "Chris",
+    src: require("./assets/chris.jpg"),
+  },
+  {
+    name: "Elizabeth",
+    src: require("./assets/elizabeth.jpeg"),
+  },
+  {
+    name: "Gessie",
+    src: require("./assets/gessie.jpg"),
+  },
+  {
     name: "Lynnie",
     src: require("./assets/lynnie.jpg"),
   },
   {
-    name: "Mary B",
-    src: require("./assets/maryb.jpg"),
+    name: "Allie",
+    src: require("./assets/allie.jpeg"),
   },
   {
-    name: "Mary H",
-    src: require("./assets/maryh.jpeg"),
+    name: "Jim",
+    src: require("./assets/jim.jpg"),
   },
   {
     name: "Mike",
     src: require("./assets/mike.jpg"),
   },
   {
-    name: "Paul",
-    src: require("./assets/paul.jpg"),
-  },
-  {
-    name: "Rebecca",
-    src: require("./assets/rebecca.jpg"),
-  },
-  {
     name: "Tim",
     src: require("./assets/tim.jpg"),
+  },
+  {
+    name: "Mary B",
+    src: require("./assets/maryb.jpg"),
   },
 ];
 
