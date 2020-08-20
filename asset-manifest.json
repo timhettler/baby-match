@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.70379a54.chunk.css",
+    "main.js": "/static/js/main.90425c88.chunk.js",
+    "main.js.map": "/static/js/main.90425c88.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.559faefc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.559faefc.js.map",
+    "static/js/2.0abecc33.chunk.js": "/static/js/2.0abecc33.chunk.js",
+    "static/js/2.0abecc33.chunk.js.map": "/static/js/2.0abecc33.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8a77cfc2e1137b91384b566d8eb6ea57.js": "/precache-manifest.8a77cfc2e1137b91384b566d8eb6ea57.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.70379a54.chunk.css.map": "/static/css/main.70379a54.chunk.css.map",
+    "static/js/2.0abecc33.chunk.js.LICENSE.txt": "/static/js/2.0abecc33.chunk.js.LICENSE.txt",
+    "static/media/allie.jpeg": "/static/media/allie.466fd3d6.jpeg",
+    "static/media/chris.jpg": "/static/media/chris.721a65de.jpg",
+    "static/media/dan.jpg": "/static/media/dan.dd3a3625.jpg",
+    "static/media/elizabeth.jpeg": "/static/media/elizabeth.9dcfba8e.jpeg",
+    "static/media/ivy.jpg": "/static/media/ivy.e6a03289.jpg",
+    "static/media/lauren.jpeg": "/static/media/lauren.929faa81.jpeg",
+    "static/media/leon.jpeg": "/static/media/leon.0916dedb.jpeg",
+    "static/media/lynnie.jpg": "/static/media/lynnie.5b4ae43f.jpg",
+    "static/media/maryb.jpg": "/static/media/maryb.675c9ed5.jpg",
+    "static/media/maryh.jpeg": "/static/media/maryh.52eaf523.jpeg",
+    "static/media/mike.jpg": "/static/media/mike.48810136.jpg",
+    "static/media/rebecca.jpg": "/static/media/rebecca.0eed4025.jpg",
+    "static/media/tim.jpg": "/static/media/tim.f82b7fd7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.559faefc.js",
+    "static/js/2.0abecc33.chunk.js",
+    "static/css/main.70379a54.chunk.css",
+    "static/js/main.90425c88.chunk.js"
+  ]
+}
