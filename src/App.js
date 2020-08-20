@@ -117,7 +117,11 @@ function App() {
             <img src={src} alt="" />
             <figcaption>
               <div className="count">{index + 1}</div>
-              <select name="foo" value={selectedNames[index]}>
+              <select
+                className="select"
+                name="foo"
+                value={selectedNames[index]}
+              >
                 <option value={""}>---</option>
                 {allNames.map((name) => (
                   <option
